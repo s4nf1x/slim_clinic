@@ -1,0 +1,168 @@
+* {
+  font-family: $--font-default;
+  line-height: initial;
+}
+
+.title-block {
+  margin-bottom: 42px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+
+  h2 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+    color: $--color-default;
+  }
+
+  .link-black {
+    margin-bottom: 8px;
+  }
+}
+
+h1, .h1 {
+
+}
+
+.h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 42px;
+  letter-spacing: 0.01em;
+  color: $--color-default;
+}
+
+h3, .h3 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 42px;
+  letter-spacing: 0.01em;
+  color: $--color-default;
+
+  &:hover {
+    color: $--color-default;
+  }
+}
+
+h4, .h4 {
+  color: $--color-default;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 105%;
+  letter-spacing: 0.3px;
+  margin: 20px 0;
+}
+
+h5, .h5 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31px;
+  color: $--color-default;
+}
+
+h6, .h6 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.0015em;
+  margin: 0;
+  color: $--color-default;
+}
+
+.title-head {
+
+  h1 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+  }
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.0025em;
+  color: $--color-default;
+  margin-bottom: 15px;
+
+  a {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.0025em;
+    color: $--color-default;
+    text-decoration: underline;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.link-black {
+  color: $--color-default;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.0125em;
+
+  &:hover {
+    color: $--color-purple-dark;
+  }
+  &:focus {
+    color: $--color-purple;
+  }
+}
+
+.link-purple {
+  color: $--color-purple;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.0125em;
+
+  &:hover {
+    color: $--color-default;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title-block {
+    margin-bottom: 20px;
+  }
+  .h6 {
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.175px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .title-head {
+
+    h1 {
+      font-size: 30px;
+      line-height: 105%;
+    }
+  }
+
+  .title-block {
+    margin-bottom: 20px;
+    h2 {
+      font-size: 30px;
+      line-height: 105%;
+    }
+  }
+}

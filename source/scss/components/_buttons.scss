@@ -1,0 +1,47 @@
+button {
+  cursor: pointer;
+}
+
+.btn {
+  max-width: 220px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $--font-default;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn-purple {
+  color: $--color-white;
+  background-color: $--color-purple;
+
+  &:hover {
+    background-color: $--color-purple-dark;
+  }
+  &:focus {
+    background-color: $--color-purple-light;
+  }
+}
+
+.btn-black {
+  background-color: $--color-default;
+  color: $--color-white;
+
+  &:hover {
+    color: $--color-yellow;
+  }
+  &:focus {
+    color: $--color-yellow-light;
+  }
+}
+
+
+
+

@@ -1,0 +1,207 @@
+.specialist-section {
+  background-image: url(../img/specialists-back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 633px;
+  overflow: hidden;
+
+  .slick-track {
+    display: flex;
+  }
+
+  .specialists-slider .specialist-card {
+    margin-left: 24px;
+  }
+
+  .block-tablet {
+    display: none;
+  }
+
+  .h3 {
+    margin-bottom: 10px;
+  }
+
+  .title-block {
+    margin-bottom: 10px;
+  }
+
+  .description {
+    margin-bottom: 60px;
+  }
+
+  .container {
+    height: inherit;
+  }
+
+  .col-lg-5 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .specialist-grid {
+    display: flex;
+    justify-content: center;
+    max-width: 570px;
+
+    .specialist-column {
+      padding: 0 15px;
+    }
+  }
+
+  .specialist-grid-top {
+    padding-top: 60px;
+    margin-bottom: 15px;
+  }
+
+  .specialist-grid-bottom {
+    padding-bottom: 60px;
+    margin-top: 15px;
+  }
+
+  .specialist-card {
+    padding: 24px 24px 26px;
+    border-radius: 30px;
+    background-color: $--color-white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 270px;
+    width: 100%;
+    height: 100%;
+
+    .specialist-image {
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 118px;
+        height: 118px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+    .specialist-name {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      width: 100%;
+      text-align: center;
+      color: $--color-default;
+      margin-bottom: 5px;
+    }
+
+    .specialist-description {
+
+      p {
+        color: $--color-grey;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        -moz-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-clamp: 2;
+        box-orient: vertical;
+        margin: 0;
+      }
+
+    }
+
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .specialist-section {
+    height: initial;
+    padding: 50px 0;
+    background-image: url(../img/spec-back-tablet.png);
+    background-size: 100%;
+    background-position: 100% 100%;
+    background-color: #F8F8F8;
+
+    .specialists-slider {
+      margin-top: 60px;
+    }
+
+    .block-pc {
+      display: flex;
+    }
+
+    .specialist-grid {
+      max-width: initial;
+    }
+
+    .specialist-grid-top {
+      margin-bottom: 0;
+    }
+
+    .specialist-grid-bottom {
+      padding-bottom: 0;
+      padding-top: 60px;
+      margin-top: 0;
+    }
+
+    .description {
+      margin-bottom: 25px;
+    }
+
+    .title-block {
+      margin-bottom: 10px;
+
+      h2 {
+        font-size: 40px;
+        line-height: 42px;
+        max-width: 65%;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 768px) {
+  .specialist-section {
+    background-image: url(../img/spec-back-mob.png);
+    background-size: 110%;
+    background-position: 0 100%;
+    padding: 40px 0;
+
+    .block-pc {
+      display: none;
+    }
+
+    .block-tablet {
+      display: block;
+    }
+
+    .btn-black {
+      max-width: 100%;
+    }
+
+    .title-block {
+
+      h2 {
+        max-width: 100%;
+      }
+    }
+
+    .specialists-slider {
+      margin-top: 40px;
+
+      .specialist-card {
+        padding: 25px 12px;
+        max-width: 240px;
+      }
+    }
+
+  }
+}

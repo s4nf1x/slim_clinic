@@ -1,0 +1,146 @@
+.disclaimer {
+  background-color: $--color-default;
+  padding: 8px 0;
+
+  .h6 {
+    color: $--color-white;
+    width: 100%;
+    text-align: center;
+    span {
+      color: $--color-yellow;
+    }
+  }
+}
+
+.header {
+  padding: 30px 0 40px;
+
+  .btn {
+    max-width: 172px;
+    margin-left: auto;
+  }
+
+  .row {
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .header {
+    position: relative;
+
+    .btn-popup-menu {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: $--color-default;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px;
+      margin-left: 20px;
+
+      .line {
+        height: 2px;
+        width: 100%;
+        transition: 0.3s;
+        background-color: $--color-white;
+        border-radius: 10px;
+
+        &:nth-of-type(2) {
+          margin: 4px 0;
+        }
+      }
+    }
+
+    .btn-popup-menu.cross {
+
+      .line:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+      }
+      .line:nth-child(2) {
+        opacity: 0;
+      }
+      .line:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+      }
+    }
+
+    .col-md-6 {
+
+      &:nth-of-type(1) {
+        order: -1;
+      }
+
+      &:nth-of-type(3) {
+        order: -1;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .header-nav {
+      position: absolute;
+      right: 70px;
+      top: 80px;
+      opacity: 0;
+      visibility: hidden;
+      overflow: hidden;
+      pointer-events: none;
+      transition: 0.3s;
+      border-radius: 20px;
+      border: 1px solid #EBEBEB;
+      background-color: $--color-grey-light;
+      padding: 25px 20px 25px 45px;
+    }
+
+    .header-nav.show {
+      visibility: visible;
+      overflow: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .disclaimer {
+    padding: 7px 0;
+
+    .h6 {
+      font-size: 14px;
+      line-height: normal;
+      letter-spacing: 0.175px;
+    }
+  }
+
+  .header {
+    padding: 23px 0 43px;
+
+    .btn {
+      font-size: 0;
+      max-width: 40px;
+      background-image: url(../img/icons/star-ico-header.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 16px;
+    }
+
+    .logo {
+      img {
+        max-width: 152px;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 23px 0 20px;
+  }
+}
